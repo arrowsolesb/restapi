@@ -30,6 +30,44 @@
 				</configuration>
 			</plugin>
 			<plugin>
+					 <groupId>org.mule.tools.maven</groupId>
+					 <artifactId>mule-maven-plugin</artifactId>
+					 <version>2.3.3</version>
+			</plugin>
+			
+			<plugin>
+			  <groupId>org.mule.tools.maven</groupId>
+			  <artifactId>mule-maven-plugin</artifactId>
+			 <version>2.3.3</version>
+			  <extensions>true</extensions>
+			  <configuration>
+			    <cloudHubDeployment>
+			      <uri>https://anypoint.mulesoft.com</uri>
+			      <muleVersion>3.9.3</muleVersion>
+			      <username>muleesb01</username>
+			      <password>Muleesb@01</password>
+			      <applicationName>restapi01</applicationName>
+			      <environment>Sandbox</environment>
+			      <workerType>Micro</workerType> 
+			       <workers>1</workers>
+			      <properties>
+			        <key>value</key>
+			      </properties>
+			    </cloudHubDeployment>
+			  </configuration>
+			  <executions>
+	          <execution>
+	            <id>deploy</id>
+	            <phase>deploy</phase>
+	            <goals>
+	              <goal>deploy</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+			</plugin>
+			
+			
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.7</version>

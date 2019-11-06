@@ -36,7 +36,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     </configuration>
   
   
-    <context:property-placeholder location="restapi-${env}.properties"/>
+    <context:property-placeholder location="restapi-DEV.properties"/>
 
 
  <catch-exception-strategy  name="GlobalExecptionStrtergy">
