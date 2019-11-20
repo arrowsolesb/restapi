@@ -66,9 +66,13 @@ now as :string {format: "yyyy-MM-dd HH:mm:ss.SSS"}]]></dw:set-variable>
     
      <flow name="post:/addUnitedFlight:restapi-config">
         <flow-ref name="addunitedflightFlow" doc:name="Flow Reference"/>
-      
-
-    </flow>
+     </flow>
+     
+      <flow name="post:/addDeltaFlight:restapi-config">
+        <flow-ref name="adddeltaflightFlow" doc:name="adddeltaflightFlow"/>
+       
+     </flow>
+     
     <apikit:mapping-exception-strategy name="restapi-apiKitGlobalExceptionMapping">
         <apikit:mapping statusCode="404">
             <apikit:exception value="org.mule.module.apikit.exception.NotFoundException" />
