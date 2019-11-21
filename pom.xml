@@ -25,7 +25,13 @@
 				<extensions>true</extensions>
 				<configuration>
                     <copyToAppsDirectory>true</copyToAppsDirectory>
-				</configuration>
+				<inclusions>
+                        <inclusion>
+                            <groupId>com.mulesoft.security</groupId>
+                            <artifactId>mule-module-security-property-placeholder</artifactId>
+                        </inclusion>
+                    </inclusions>
+                </configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -54,7 +60,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- <plugin>
+			 <plugin>
 					 <groupId>org.mule.tools.maven</groupId>
 					 <artifactId>mule-maven-plugin</artifactId>
 					 <version>2.3.3</version>
@@ -69,9 +75,9 @@
 			    <cloudHubDeployment>
 			      <uri>https://anypoint.mulesoft.com</uri>
 			      <muleVersion>3.9.3</muleVersion>
-			      <username>muleesb21</username>
-			      <password>Muleesb@21</password>
-			      <applicationName>deltapi</applicationName>
+			      <username>mulesboct2019</username>
+			      <password>Mulesboct@2019</password>
+			      <applicationName>restapinov22</applicationName>
 			      <environment>Sandbox</environment>
 			      <workerType>Micro</workerType> 
 			       <workers>1</workers>
@@ -89,7 +95,7 @@
 	            </goals>
 	          </execution>
 	        </executions>
-			</plugin> -->
+			</plugin> 
 		</plugins>
 	</build>
 
@@ -102,13 +108,24 @@
     <version>5.1.18</version>
 </dependency>
 		
-    <dependency>
+  <!--   <dependency>
             <groupId>org.mule.modules</groupId>
             <artifactId>mule-module-spring-config</artifactId>
             <version>${mule.version}</version>
             <scope>provided</scope>
         </dependency>
-    </dependencies>
+    <dependency>
+            <groupId>com.mulesoft.security</groupId>
+            <artifactId>mule-module-security-property-placeholder</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+    <dependency>
+            <groupId>com.mulesoft.weave</groupId>
+            <artifactId>mule-plugin-weave</artifactId>
+            <version>${mule.version}</version>
+            <scope>provided</scope>
+        </dependency> -->
+    </dependencies> 
 
 	<repositories>
           <repository>
