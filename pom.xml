@@ -60,7 +60,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		<!-- 	 <plugin>
+		 	 <plugin>
 					 <groupId>org.mule.tools.maven</groupId>
 					 <artifactId>mule-maven-plugin</artifactId>
 					 <version>2.3.3</version>
@@ -75,9 +75,9 @@
 			    <cloudHubDeployment>
 			      <uri>https://anypoint.mulesoft.com</uri>
 			      <muleVersion>3.9.3</muleVersion>
-			      <username>mulesboct2019</username>
-			      <password>Mulesboct@2019</password>
-			      <applicationName>restapinov22</applicationName>
+			      <username>mesbnov2017</username>
+			      <password>Mesbnov@2017</password>
+			      <applicationName>restapinov29</applicationName>
 			      <environment>Sandbox</environment>
 			      <workerType>Micro</workerType> 
 			       <workers>1</workers>
@@ -96,7 +96,7 @@
 	          </execution>
 	        </executions>
 			</plugin> 
- -->		</plugins>
+		</plugins>
 	</build>
 
 	<!-- Mule Dependencies -->
